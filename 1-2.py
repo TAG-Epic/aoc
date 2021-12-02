@@ -1,0 +1,1 @@
+(lambda numbers: print(sum(1 for i, n in enumerate(numbers) if i < len(numbers) - 2 and (n + numbers[i + 1] + numbers[i + 2]) > (numbers[i - 1] + n + numbers[i + 1]))))([int(x) for x in open("input.txt").readlines()])

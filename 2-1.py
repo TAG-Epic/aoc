@@ -1,0 +1,1 @@
+print(sum(int(a[1]) for a in [b.split(" ") for b in open("input2.txt", mode="r").readlines()] if a[0] == "forward") * (sum(int(a[1]) for a in [b.split(" ") for b in open("input2.txt", mode="r").readlines()] if a[0] == "up") + (-1 * sum(int(a[1]) for a in [b.split(" ") for b in open("input2.txt", mode="r").readlines()] if a[0] == "down"))) * -1)

@@ -1,0 +1,1 @@
+for x in range(8): print("░" * ((8-x + (9 if x == 7 else 0)) if x > 2 else (8-x if x !=0 else 9-x)) + "▓" * ((6+x*2-(19 if x == 7 else 0)) if x > 2 else (6+x*2 if x != 0 else 4+x*2))+ "░" * (8-x+ (11 if x == 7 else (0 if x != 0 else 1))))
